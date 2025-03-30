@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('Premium\ Vector\ _\ Seamless\ Unicorn\ cartoon\ princess\ pegasus\ pony\ on\ sky\ kawaii\ animal.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: rgba(255, 182, 193, 0.9);
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.5);
+}
+
+h1 {
+    color: #ff1493;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-height: 500px;
+    overflow-y: scroll;
+    padding: 10px;
+    background: rgba(255, 105, 180, 0.5);
+    border-radius: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #ff1493;
+}

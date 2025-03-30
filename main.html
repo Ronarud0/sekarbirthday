@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Surprise</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div id="countdown-container">
+        <h2>Sekar Birthday 💖</h2>
+        <div id="countdown">
+            <span id="days"></span> DAY
+            <span id="hours"></span> HOURS
+            <span id="minutes"></span> MINUTE
+            <span id="seconds"></span> SECOND
+        </div>
+    </div>
+    
+
+    
+    <script>
+        function updateCountdown() {
+            const targetDate = new Date("April 6, 2025 00:00:00").getTime();
+            const now = new Date().getTime();
+            const timeDiff = targetDate - now;
+    
+            if (timeDiff <= 0) {
+                document.getElementById("countdown").innerHTML = "Selamat Hari Spesial Kita 💖";
+                return;
+            }
+    
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+    
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+        }
+    
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+    
+    <div class="container">
+        <div class="contentwrapper">
+
+               <div class="fotoatas">
+                <img src="berdiri.jpg" alt="gambaratas">
+               </div>
+               
+    <div id="main-container" class="hidden">
+        <div class="card">
+            <div class="button-group">
+                <button onclick="window.location.href='profil.html'">Profile</button>
+                <button onclick="window.location.href='readme.html'">Read Me</button>
+                <button onclick="window.location.href='memories.html'">Our Memories</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>

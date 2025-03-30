@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('Premium\ Vector\ _\ Seamless\ Unicorn\ cartoon\ princess\ pegasus\ pony\ on\ sky\ kawaii\ animal.jpg') center/cover no-repeat;
+    opacity: 0,9;  /* Ubah transparansi di sini */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center
+    
+}
+   
+
+.container {
+    place-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    justify-content: center;
+    audio {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+
+.text {
+    font-family: "Playfair Display", serif;
+    color: #e91e63;
+    font-size: 30px;
+
+}
+
+.textpin {
+    font-family: "Bodoni Moda", serif;
+    color: #ff80ab;
+}
+
+.pin-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ff80ab;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+#pin-input {
+    flex-grow: 1;
+    font-size: 24px;
+    border: none;
+    background: none;
+    color: white;
+    text-align: center;
+}
+
+.clear-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Rata tengah */
+    gap: 15px; /* Jarak antar gambar */
+    margin: 10px;
+}
+
+.image-container img {
+    width: 150px; /* Sesuaikan ukuran gambar */
+    height: auto;
+    border-radius: 10px; /* Opsional, buat sudut membulat */
+}
+
+
+.keypad  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    background: #ff4081;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e91e63;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
